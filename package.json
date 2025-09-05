@@ -1,0 +1,23 @@
+{
+  "name": "automation-qa",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karapuz1337/automation-qa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karapuz1337/automation-qa/issues"
+  },
+  "homepage": "https://github.com/karapuz1337/automation-qa#readme",
+  "dependencies": {
+    "chalk": "^5.6.0"
+  }
+}
