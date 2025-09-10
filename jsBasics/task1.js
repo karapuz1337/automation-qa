@@ -10,7 +10,7 @@ const debt = null
 let job
 
 // I will not just print them, but use them creatively
-console.log(`User ${user} is ${25}`)
+console.log(`User ${user} is ${age}`)
 if (isStudent){
     console.log("Is a student.")
 }
