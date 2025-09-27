@@ -8,3 +8,10 @@ const copyOfNumbersList = structuredClone(numbersList)
 copyOfNumbersList.sort((a, b) => a - b)
 
 console.log(copyOfNumbersList)
+
+/*
+[
+   1,  2,  4,  5,
+  10, 14, 34, 43
+]
+ */
