@@ -10,3 +10,4 @@ console.log(chalk.yellow('I have decided to learn more about it.'));
 console.log(chalk.dim("hw3.1 done\nIvan Bilanov"))
 
 // Test comment to trigger git change// Test hook fix
+// Test hook fix
