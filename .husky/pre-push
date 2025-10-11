@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+. "$(dirname "$0")/_/h"
+
+echo "🔍 Running full ESLint check before push..."
+npm run lint:check
+
+if [ $? -ne 0 ]; then
+  echo "❌ ESLint failed. Push aborted."
+  exit 1
+fi
+
+echo "✅ All checks passed! Pushing..."

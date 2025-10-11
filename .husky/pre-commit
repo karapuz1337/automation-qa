@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-. "$(dirname "$0")/h"
+. "$(dirname "$0")/_/h"
 
 # Get staged JavaScript files
 STAGED_FILES=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.(js|mjs|cjs)$')
