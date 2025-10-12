@@ -1,8 +1,0 @@
-node_modules/
-augment/
-.husky/
-*.min.js
-dist/
-build/
-coverage/
-.git/
