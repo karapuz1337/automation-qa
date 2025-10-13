@@ -1,8 +1,8 @@
 // Create person object with initial properties
 const person = {
-    firstName : "Henry",
-    lastName : "Pope",
-    age : 56
+  firstName : "Henry",
+  lastName : "Pope",
+  age : 56
 };
 
 // Add email property to person object

@@ -1,5 +1,5 @@
-import Book from "./Book.js"
-import EBook from "./EBook.js"
+import Book from "./Book.js";
+import EBook from "./EBook.js";
 
 // Create some Book and EBook objects
 const book1 = new Book("Harry Potter and the Sorcerer's Stone", "J. K. Rowling", 1997);
@@ -13,7 +13,7 @@ const booksList = [book1, book2, eBook1, eBook2];
 
 // Use the printBookInfo method on all objects
 for (const book of booksList) {
-    book.printBookInfo();
+  book.printBookInfo();
 }
 
 /*

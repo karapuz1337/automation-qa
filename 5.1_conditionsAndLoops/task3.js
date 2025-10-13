@@ -1,26 +1,26 @@
 // Number for multiplication table
-const number = 5
+const number = 5;
 
 // Check if it is a number
 if (typeof number === "number"){
-    // FOR
-    console.log(`Multiplication table for number "${number}" using FOR:`)
-    for (let i = 1; i <= 10; i++){
-        const result = number * i
-        console.log(`${number} x ${i} = ${result}`)
-    }
+  // FOR
+  console.log(`Multiplication table for number "${number}" using FOR:`);
+  for (let i = 1; i <= 10; i++){
+    const result = number * i;
+    console.log(`${number} x ${i} = ${result}`);
+  }
 
-    // WHILE
-    console.log(`\nMultiplication table for number "${number}" using WHILE:`)
-    let i = 1
-    while (i <= 10){
-        const result = number * i
-        console.log(`${number} x ${i} = ${result}`)
-        i++
-    }
+  // WHILE
+  console.log(`\nMultiplication table for number "${number}" using WHILE:`);
+  let i = 1;
+  while (i <= 10){
+    const result = number * i;
+    console.log(`${number} x ${i} = ${result}`);
+    i++;
+  }
 }
-else{
-    throw new Error("Value must be a number")
+else {
+  throw new Error("Value must be a number");
 }
 
 /*
