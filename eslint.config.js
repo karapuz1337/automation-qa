@@ -101,8 +101,7 @@ export default [
   {
     files: [
       "**/task*.js",
-      "**/index.js",
-      "**/*_*/**/*.js" // Matches patterns like 4.1_jsBasics, 10.1_OOP
+      "**/index.js"
     ],
     rules: {
       "no-console": "off",
