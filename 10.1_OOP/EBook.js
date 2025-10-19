@@ -11,11 +11,12 @@ export default class EBook extends Book {
      */
   constructor(title, author, releaseYear, fileFormat) {
     super(title, author, releaseYear);
-    this._fileFormat = this._validateFileFormatParam(fileFormat);
+    this._fileFormat = EBook._validateFileFormatParam(fileFormat);
   }
 
   // Method to print all info about the Book. Reuses the getBookInfo from superclass
   printBookInfo() {
+    // eslint-disable-next-line no-console
     console.log([this.getBookInfo(), `File format: ${this._fileFormat}`].join(" "));
   }
 
@@ -50,7 +51,7 @@ export default class EBook extends Book {
   ];
 
   // Method to validate the provided file format parameter
-  _validateFileFormatParam(value) {
+  static _validateFileFormatParam(value) {
     // Check if value is provided
     if (!value) {
       throw new Error("Please provide the file format parameter");
@@ -74,7 +75,7 @@ export default class EBook extends Book {
 
   // Set method for the file format
   set fileFormat(newFileFormat) {
-    this._fileFormat = this._validateFileFormatParam(newFileFormat);
+    this._fileFormat = EBook._validateFileFormatParam(newFileFormat);
   }
 
   // Static method to convert Book objects to EBook objects

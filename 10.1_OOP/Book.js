@@ -7,9 +7,9 @@ export default class Book{
     releaseYear : the year the book was released (use the "-" sign for BCE years)
     */
   constructor(title, author, releaseYear) {
-    this._title = this._validateStringParam(title, "title");
-    this._author = this._validateStringParam(author, "author");
-    this._releaseYear = this._validateYearParam(releaseYear);
+    this._title = Book._validateStringParam(title, "title");
+    this._author = Book._validateStringParam(author, "author");
+    this._releaseYear = Book._validateYearParam(releaseYear);
   }
 
   // Method to get book info as a string
@@ -19,11 +19,12 @@ export default class Book{
 
   // Method to print all info about the Book
   printBookInfo() {
+    // eslint-disable-next-line no-console
     console.log(this.getBookInfo());
   }
 
   // Method to validate the provided parameters for string parameters
-  _validateStringParam(value, paramName) {
+  static _validateStringParam(value, paramName) {
     // Check if value is provided
     if (!value) {
       throw new Error(`Please provide the ${paramName} parameter`);
@@ -52,7 +53,7 @@ export default class Book{
   }
 
   // Method to validate provided year parameter
-  _validateYearParam(value) {
+  static _validateYearParam(value) {
     // Check if value is provided
     if (!value) {
       throw new Error("Please provide the release year");
@@ -94,7 +95,7 @@ export default class Book{
 
   // Set method for the book title
   set title(newTitle) {
-    this._title = this._validateStringParam(newTitle, "title");
+    this._title = Book._validateStringParam(newTitle, "title");
 
   }
 
@@ -105,7 +106,7 @@ export default class Book{
 
   // Set method for the book author
   set author(newAuthor) {
-    this._author = this._validateStringParam(newAuthor, "author");
+    this._author = Book._validateStringParam(newAuthor, "author");
   }
 
   // Get method for the release year
@@ -115,7 +116,7 @@ export default class Book{
 
   // Set method for the release year
   set releaseYear(newReleaseYear) {
-    this._releaseYear = this._validateYearParam(newReleaseYear);
+    this._releaseYear = Book._validateYearParam(newReleaseYear);
   }
 
   // Static method to return the oldest book
