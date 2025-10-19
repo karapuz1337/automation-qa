@@ -133,8 +133,8 @@ export default [
       }
     },
     rules: {
-      "no-console": "off",
-      "no-unused-expressions": "off"
+      "no-console": "warn",
+      "no-unused-expressions": "warn"
     }
   },
 
